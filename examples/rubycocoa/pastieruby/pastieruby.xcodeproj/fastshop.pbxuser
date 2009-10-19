@@ -1,0 +1,85 @@
+// !$*UTF8*$!
+{
+	100F10A6108D073800023AE7 /* pastieruby */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = pastieruby;
+		sourceDirectories = (
+		);
+	};
+	100F10B4108D073A00023AE7 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	100F10B5108D073A00023AE7 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 100F10A6108D073800023AE7 /* pastieruby */;
+		activeTarget = 4DDCA7030ACC9A6100E082CE /* pastieruby */;
+		addToTargets = (
+			4DDCA7030ACC9A6100E082CE /* pastieruby */,
+		);
+		codeSenseManager = 100F10B5108D073A00023AE7 /* Code sense */;
+		executables = (
+			100F10A6108D073800023AE7 /* pastieruby */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 277677880;
+			PBXWorkspaceStateSaveDate = 277677880;
+		};
+		sourceControlManager = 100F10B4108D073A00023AE7 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	4DDCA7030ACC9A6100E082CE /* pastieruby */ = {
+		activeExec = 0;
+		executables = (
+			100F10A6108D073800023AE7 /* pastieruby */,
+		);
+	};
+}
