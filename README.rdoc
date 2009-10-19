@@ -1,0 +1,40 @@
+= PastieRuby
+
+== DESCRIPTION:
+
+Pastie.org implementation in Ruby.
+
+== INSTALL:
+
+  gem sources -a http://gems.github.com
+  sudo gem install pedrofranceschi-pastieruby
+
+== SYNOPSIS:
+
+ >> require 'pastieruby'
+
+If you want to pastie some text, do:
+
+ >> myPastieUrl = pastie_text("This is a test", "plaintext", false)
+ => "http://www.pastie.org/PASTIE_ID"
+
+If you want to pastie a file, use:
+
+ >> myPastieUrl = pastie_file("/home/myuser/desktop/testing.txt")
+ => "http://www.pastie.org/PASTIE_ID"
+
+== REQUIREMENTS:
+
+* mechanize
+* nokogiri
+
+== TODO:
+
+* Implement more file extensions in the pastie file function.
+
+== ABOUT:
+
+2009 (C)
+Developed by pH (Pedro Henrique Cavallieri Franceschi)
+You can find me at pedrohfranceschi@gmail.com or @pedroh96.
+www.iBlogeek.com - 2006-2009 (C)
