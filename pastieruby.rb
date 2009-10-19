@@ -9,7 +9,7 @@ require 'rubygems'
 require 'mechanize'
 require 'nokogiri'
 
-def send_pastie(text_to_paste, language, isPrivate=bool)
+def pastie_text(text_to_paste, language, isPrivate=bool)
   
   if isPrivate
     restricted = 1
@@ -66,9 +66,26 @@ def send_pastie(text_to_paste, language, isPrivate=bool)
   return "http://www.pastie.org/#{return_value}"
 end
 
-puts "Enter some text:"
-text = gets.chomp
+def pastie_file(filepath)
+  file = File.new(filepath, "r");
+  file_content = String.new
+    while (line = file.gets)
+        file_content << line
+    end
+  file.close
+  
+  ext = File.extname(filepath)
+  
+  language = case ext
+    when ".rb" then "ruby"
+    when ".cpp" then "c++"
+    when ".c" then "c"
+    when ".html" then "html/erb/rails"  
+    when ".txt" then "plaintext"
+    else "plaintext"  
+    # need to improve other languages here...
+    # need a day with 36 hours :P
+  end
 
-url = send_pastie(text, "ruby", true)
-
-puts url
+  return pastie_text(file_content, language, false)
+end
